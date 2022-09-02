@@ -47,7 +47,7 @@
         <section class="hero">
             <div class="container">
    <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-  <button type="button" class="hero-button">Замовити послугу</button>
+  <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -99,14 +99,17 @@
             <div class="container">
 <h2 class="occupation">Чим ми займаємось</h2>
 <ul class="occupation-menu list">
-    <li>
+    <li class="occupation-menu-item">
         <img src="./images/our-work1.jpg" alt="Написання коду" width="370">
+            <p class="overlay-title">Десктопні додатки</p>
     </li>
-    <li>
+    <li class="occupation-menu-item">
         <img src="./images/our-work2.jpg" alt="Створення додатків на телефон" width="370">
+        <p class="overlay-title">Мобільні додатки</p>
     </li>
-    <li>
+    <li class="occupation-menu-item">
         <img src="./images/our-work3.jpg" alt="Графічний дизайн" width="370">
+        <p class="overlay-title">Дизайнерські рішення</p>
     </li>
 </ul>
             </div> 
@@ -394,5 +397,17 @@
 
     </div>
 </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="modal-window-button" data-modal-close>
+            <svg class="modal-close">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+ <script src="./js/modal.js"></script>
 </body>
 </html>
